@@ -1,1 +1,193 @@
-
+stress_level_min,stress_level_max,muscle_category,calories_min,calories_max,exercise,exercise_intensity,estimated_calories_burned_30min,research_basis
+1,2,shoulders,2400,3200,Push Press,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Push Press,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Push Press,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Push Press,Low,120,Low fatigue isolation movement
+1,2,shoulders,2400,3200,Overhead Barbell Press,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Overhead Barbell Press,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Overhead Barbell Press,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Overhead Barbell Press,Low,120,Low fatigue isolation movement
+1,2,shoulders,2400,3200,Arnold Press,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Arnold Press,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Arnold Press,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Arnold Press,Low,120,Low fatigue isolation movement
+1,2,shoulders,2400,3200,Seated Dumbbell Press,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Seated Dumbbell Press,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Seated Dumbbell Press,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Seated Dumbbell Press,Low,120,Low fatigue isolation movement
+1,2,shoulders,2400,3200,Lateral Raises,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Lateral Raises,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Lateral Raises,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Lateral Raises,Low,120,Low fatigue isolation movement
+1,2,shoulders,2400,3200,Front Raises,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Front Raises,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Front Raises,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Front Raises,Low,120,Low fatigue isolation movement
+1,2,shoulders,2400,3200,Machine Shoulder Press,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Machine Shoulder Press,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Machine Shoulder Press,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Machine Shoulder Press,Low,120,Low fatigue isolation movement
+1,2,shoulders,2400,3200,Band Shoulder Raises,High,260,High readiness compound movement
+2,3,shoulders,2200,2800,Band Shoulder Raises,Medium,200,Moderate intensity hypertrophy work
+3,4,shoulders,1900,2500,Band Shoulder Raises,Medium,170,Reduced CNS demand
+4,5,shoulders,1600,2200,Band Shoulder Raises,Low,120,Low fatigue isolation movement
+1,2,chest,2400,3200,Barbell Bench Press,High,260,High readiness compound movement
+2,3,chest,2200,2800,Barbell Bench Press,Medium,200,Moderate intensity hypertrophy work
+3,4,chest,1900,2500,Barbell Bench Press,Medium,170,Reduced CNS demand
+4,5,chest,1600,2200,Barbell Bench Press,Low,120,Low fatigue isolation movement
+1,2,chest,2400,3200,Incline Bench Press,High,260,High readiness compound movement
+2,3,chest,2200,2800,Incline Bench Press,Medium,200,Moderate intensity hypertrophy work
+3,4,chest,1900,2500,Incline Bench Press,Medium,170,Reduced CNS demand
+4,5,chest,1600,2200,Incline Bench Press,Low,120,Low fatigue isolation movement
+1,2,chest,2400,3200,Dumbbell Bench Press,High,260,High readiness compound movement
+2,3,chest,2200,2800,Dumbbell Bench Press,Medium,200,Moderate intensity hypertrophy work
+3,4,chest,1900,2500,Dumbbell Bench Press,Medium,170,Reduced CNS demand
+4,5,chest,1600,2200,Dumbbell Bench Press,Low,120,Low fatigue isolation movement
+1,2,chest,2400,3200,Push-Ups,High,260,High readiness compound movement
+2,3,chest,2200,2800,Push-Ups,Medium,200,Moderate intensity hypertrophy work
+3,4,chest,1900,2500,Push-Ups,Medium,170,Reduced CNS demand
+4,5,chest,1600,2200,Push-Ups,Low,120,Low fatigue isolation movement
+1,2,chest,2400,3200,Cable Fly,High,260,High readiness compound movement
+2,3,chest,2200,2800,Cable Fly,Medium,200,Moderate intensity hypertrophy work
+3,4,chest,1900,2500,Cable Fly,Medium,170,Reduced CNS demand
+4,5,chest,1600,2200,Cable Fly,Low,120,Low fatigue isolation movement
+1,2,chest,2400,3200,Chest Fly Machine,High,260,High readiness compound movement
+2,3,chest,2200,2800,Chest Fly Machine,Medium,200,Moderate intensity hypertrophy work
+3,4,chest,1900,2500,Chest Fly Machine,Medium,170,Reduced CNS demand
+4,5,chest,1600,2200,Chest Fly Machine,Low,120,Low fatigue isolation movement
+1,2,chest,2400,3200,Paused Bench Press,High,260,High readiness compound movement
+2,3,chest,2200,2800,Paused Bench Press,Medium,200,Moderate intensity hypertrophy work
+3,4,chest,1900,2500,Paused Bench Press,Medium,170,Reduced CNS demand
+4,5,chest,1600,2200,Paused Bench Press,Low,120,Low fatigue isolation movement
+1,2,legs,2400,3200,Back Squat,High,260,High readiness compound movement
+2,3,legs,2200,2800,Back Squat,Medium,200,Moderate intensity hypertrophy work
+3,4,legs,1900,2500,Back Squat,Medium,170,Reduced CNS demand
+4,5,legs,1600,2200,Back Squat,Low,120,Low fatigue isolation movement
+1,2,legs,2400,3200,Front Squat,High,260,High readiness compound movement
+2,3,legs,2200,2800,Front Squat,Medium,200,Moderate intensity hypertrophy work
+3,4,legs,1900,2500,Front Squat,Medium,170,Reduced CNS demand
+4,5,legs,1600,2200,Front Squat,Low,120,Low fatigue isolation movement
+1,2,legs,2400,3200,Leg Press,High,260,High readiness compound movement
+2,3,legs,2200,2800,Leg Press,Medium,200,Moderate intensity hypertrophy work
+3,4,legs,1900,2500,Leg Press,Medium,170,Reduced CNS demand
+4,5,legs,1600,2200,Leg Press,Low,120,Low fatigue isolation movement
+1,2,legs,2400,3200,Walking Lunges,High,260,High readiness compound movement
+2,3,legs,2200,2800,Walking Lunges,Medium,200,Moderate intensity hypertrophy work
+3,4,legs,1900,2500,Walking Lunges,Medium,170,Reduced CNS demand
+4,5,legs,1600,2200,Walking Lunges,Low,120,Low fatigue isolation movement
+1,2,legs,2400,3200,Romanian Deadlift,High,260,High readiness compound movement
+2,3,legs,2200,2800,Romanian Deadlift,Medium,200,Moderate intensity hypertrophy work
+3,4,legs,1900,2500,Romanian Deadlift,Medium,170,Reduced CNS demand
+4,5,legs,1600,2200,Romanian Deadlift,Low,120,Low fatigue isolation movement
+1,2,legs,2400,3200,Seated Leg Curl,High,260,High readiness compound movement
+2,3,legs,2200,2800,Seated Leg Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,legs,1900,2500,Seated Leg Curl,Medium,170,Reduced CNS demand
+4,5,legs,1600,2200,Seated Leg Curl,Low,120,Low fatigue isolation movement
+1,2,legs,2400,3200,Goblet Squat,High,260,High readiness compound movement
+2,3,legs,2200,2800,Goblet Squat,Medium,200,Moderate intensity hypertrophy work
+3,4,legs,1900,2500,Goblet Squat,Medium,170,Reduced CNS demand
+4,5,legs,1600,2200,Goblet Squat,Low,120,Low fatigue isolation movement
+1,2,back,2400,3200,Deadlift,High,260,High readiness compound movement
+2,3,back,2200,2800,Deadlift,Medium,200,Moderate intensity hypertrophy work
+3,4,back,1900,2500,Deadlift,Medium,170,Reduced CNS demand
+4,5,back,1600,2200,Deadlift,Low,120,Low fatigue isolation movement
+1,2,back,2400,3200,Pull-Ups,High,260,High readiness compound movement
+2,3,back,2200,2800,Pull-Ups,Medium,200,Moderate intensity hypertrophy work
+3,4,back,1900,2500,Pull-Ups,Medium,170,Reduced CNS demand
+4,5,back,1600,2200,Pull-Ups,Low,120,Low fatigue isolation movement
+1,2,back,2400,3200,Lat Pulldown,High,260,High readiness compound movement
+2,3,back,2200,2800,Lat Pulldown,Medium,200,Moderate intensity hypertrophy work
+3,4,back,1900,2500,Lat Pulldown,Medium,170,Reduced CNS demand
+4,5,back,1600,2200,Lat Pulldown,Low,120,Low fatigue isolation movement
+1,2,back,2400,3200,Seated Cable Row,High,260,High readiness compound movement
+2,3,back,2200,2800,Seated Cable Row,Medium,200,Moderate intensity hypertrophy work
+3,4,back,1900,2500,Seated Cable Row,Medium,170,Reduced CNS demand
+4,5,back,1600,2200,Seated Cable Row,Low,120,Low fatigue isolation movement
+1,2,back,2400,3200,Machine Row,High,260,High readiness compound movement
+2,3,back,2200,2800,Machine Row,Medium,200,Moderate intensity hypertrophy work
+3,4,back,1900,2500,Machine Row,Medium,170,Reduced CNS demand
+4,5,back,1600,2200,Machine Row,Low,120,Low fatigue isolation movement
+1,2,back,2400,3200,Barbell Row,High,260,High readiness compound movement
+2,3,back,2200,2800,Barbell Row,Medium,200,Moderate intensity hypertrophy work
+3,4,back,1900,2500,Barbell Row,Medium,170,Reduced CNS demand
+4,5,back,1600,2200,Barbell Row,Low,120,Low fatigue isolation movement
+1,2,biceps,2400,3200,Barbell Curl,High,260,High readiness compound movement
+2,3,biceps,2200,2800,Barbell Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,biceps,1900,2500,Barbell Curl,Medium,170,Reduced CNS demand
+4,5,biceps,1600,2200,Barbell Curl,Low,120,Low fatigue isolation movement
+1,2,biceps,2400,3200,Incline Dumbbell Curl,High,260,High readiness compound movement
+2,3,biceps,2200,2800,Incline Dumbbell Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,biceps,1900,2500,Incline Dumbbell Curl,Medium,170,Reduced CNS demand
+4,5,biceps,1600,2200,Incline Dumbbell Curl,Low,120,Low fatigue isolation movement
+1,2,biceps,2400,3200,Hammer Curl,High,260,High readiness compound movement
+2,3,biceps,2200,2800,Hammer Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,biceps,1900,2500,Hammer Curl,Medium,170,Reduced CNS demand
+4,5,biceps,1600,2200,Hammer Curl,Low,120,Low fatigue isolation movement
+1,2,biceps,2400,3200,Cable Curl,High,260,High readiness compound movement
+2,3,biceps,2200,2800,Cable Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,biceps,1900,2500,Cable Curl,Medium,170,Reduced CNS demand
+4,5,biceps,1600,2200,Cable Curl,Low,120,Low fatigue isolation movement
+1,2,biceps,2400,3200,Chin-Ups,High,260,High readiness compound movement
+2,3,biceps,2200,2800,Chin-Ups,Medium,200,Moderate intensity hypertrophy work
+3,4,biceps,1900,2500,Chin-Ups,Medium,170,Reduced CNS demand
+4,5,biceps,1600,2200,Chin-Ups,Low,120,Low fatigue isolation movement
+1,2,triceps,2400,3200,Close-Grip Bench Press,High,260,High readiness compound movement
+2,3,triceps,2200,2800,Close-Grip Bench Press,Medium,200,Moderate intensity hypertrophy work
+3,4,triceps,1900,2500,Close-Grip Bench Press,Medium,170,Reduced CNS demand
+4,5,triceps,1600,2200,Close-Grip Bench Press,Low,120,Low fatigue isolation movement
+1,2,triceps,2400,3200,Cable Pushdowns,High,260,High readiness compound movement
+2,3,triceps,2200,2800,Cable Pushdowns,Medium,200,Moderate intensity hypertrophy work
+3,4,triceps,1900,2500,Cable Pushdowns,Medium,170,Reduced CNS demand
+4,5,triceps,1600,2200,Cable Pushdowns,Low,120,Low fatigue isolation movement
+1,2,triceps,2400,3200,Skull Crushers,High,260,High readiness compound movement
+2,3,triceps,2200,2800,Skull Crushers,Medium,200,Moderate intensity hypertrophy work
+3,4,triceps,1900,2500,Skull Crushers,Medium,170,Reduced CNS demand
+4,5,triceps,1600,2200,Skull Crushers,Low,120,Low fatigue isolation movement
+1,2,triceps,2400,3200,Weighted Dips,High,260,High readiness compound movement
+2,3,triceps,2200,2800,Weighted Dips,Medium,200,Moderate intensity hypertrophy work
+3,4,triceps,1900,2500,Weighted Dips,Medium,170,Reduced CNS demand
+4,5,triceps,1600,2200,Weighted Dips,Low,120,Low fatigue isolation movement
+1,2,triceps,2400,3200,Overhead Extensions,High,260,High readiness compound movement
+2,3,triceps,2200,2800,Overhead Extensions,Medium,200,Moderate intensity hypertrophy work
+3,4,triceps,1900,2500,Overhead Extensions,Medium,170,Reduced CNS demand
+4,5,triceps,1600,2200,Overhead Extensions,Low,120,Low fatigue isolation movement
+1,2,arms,2400,3200,EZ-Bar Curl,High,260,High readiness compound movement
+2,3,arms,2200,2800,EZ-Bar Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,arms,1900,2500,EZ-Bar Curl,Medium,170,Reduced CNS demand
+4,5,arms,1600,2200,EZ-Bar Curl,Low,120,Low fatigue isolation movement
+1,2,arms,2400,3200,Hammer Curl,High,260,High readiness compound movement
+2,3,arms,2200,2800,Hammer Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,arms,1900,2500,Hammer Curl,Medium,170,Reduced CNS demand
+4,5,arms,1600,2200,Hammer Curl,Low,120,Low fatigue isolation movement
+1,2,arms,2400,3200,Cable Curl,High,260,High readiness compound movement
+2,3,arms,2200,2800,Cable Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,arms,1900,2500,Cable Curl,Medium,170,Reduced CNS demand
+4,5,arms,1600,2200,Cable Curl,Low,120,Low fatigue isolation movement
+1,2,arms,2400,3200,Band Curl,High,260,High readiness compound movement
+2,3,arms,2200,2800,Band Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,arms,1900,2500,Band Curl,Medium,170,Reduced CNS demand
+4,5,arms,1600,2200,Band Curl,Low,120,Low fatigue isolation movement
+1,2,arms,2400,3200,Preacher Curl,High,260,High readiness compound movement
+2,3,arms,2200,2800,Preacher Curl,Medium,200,Moderate intensity hypertrophy work
+3,4,arms,1900,2500,Preacher Curl,Medium,170,Reduced CNS demand
+4,5,arms,1600,2200,Preacher Curl,Low,120,Low fatigue isolation movement
+1,2,abs,2400,3200,Hanging Leg Raises,High,260,High readiness compound movement
+2,3,abs,2200,2800,Hanging Leg Raises,Medium,200,Moderate intensity hypertrophy work
+3,4,abs,1900,2500,Hanging Leg Raises,Medium,170,Reduced CNS demand
+4,5,abs,1600,2200,Hanging Leg Raises,Low,120,Low fatigue isolation movement
+1,2,abs,2400,3200,Cable Crunches,High,260,High readiness compound movement
+2,3,abs,2200,2800,Cable Crunches,Medium,200,Moderate intensity hypertrophy work
+3,4,abs,1900,2500,Cable Crunches,Medium,170,Reduced CNS demand
+4,5,abs,1600,2200,Cable Crunches,Low,120,Low fatigue isolation movement
+1,2,abs,2400,3200,Plank Hold,High,260,High readiness compound movement
+2,3,abs,2200,2800,Plank Hold,Medium,200,Moderate intensity hypertrophy work
+3,4,abs,1900,2500,Plank Hold,Medium,170,Reduced CNS demand
+4,5,abs,1600,2200,Plank Hold,Low,120,Low fatigue isolation movement
+1,2,abs,2400,3200,Ab Wheel Rollout,High,260,High readiness compound movement
+2,3,abs,2200,2800,Ab Wheel Rollout,Medium,200,Moderate intensity hypertrophy work
+3,4,abs,1900,2500,Ab Wheel Rollout,Medium,170,Reduced CNS demand
+4,5,abs,1600,2200,Ab Wheel Rollout,Low,120,Low fatigue isolation movement
+1,2,abs,2400,3200,Dead Bug,High,260,High readiness compound movement
+2,3,abs,2200,2800,Dead Bug,Medium,200,Moderate intensity hypertrophy work
+3,4,abs,1900,2500,Dead Bug,Medium,170,Reduced CNS demand
+4,5,abs,1600,2200,Dead Bug,Low,120,Low fatigue isolation movement
