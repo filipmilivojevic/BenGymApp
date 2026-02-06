@@ -53,6 +53,17 @@ public static void addCategories(ArrayList<String[]> exerciseData, ArrayList<Str
             otherExercises.add(row);
 
     }}
+
+    public static ArrayList<String[]> searchInputs(ArrayList<String[]> pull, String userCat, int userCal, int userStress){
+        ArrayList<String[]> pulls = new ArrayList<>();
+        for (String[] row : pull){
+            if (Integer.parseInt(row[0]) <= userStress && Integer.parseInt(row[1]) >= userStress){
+                if (Integer.parseInt(row[3]) <= userCal && Integer.parseInt(row[4]) >= userCal){
+                    pulls.add(row);
+                }}
+        }
+        return pulls;
+    }
     
 
 
@@ -83,13 +94,12 @@ public static void main(String[] args){
     ArrayList<String[]> legsExercises = new ArrayList<>();
     ArrayList<String[]> otherExercises = new ArrayList<>();
     addCategories(exerciseData, pushExercises, pullExercises, legsExercises, otherExercises);
+    String userCategory = keyboard.nextLine();
 
-
+    String calories = keyboard.nextLine();
+    String stressLevel = keyboard.nextLine();
+    searchInputs(pullExercises, userCategory, Integer.parseInt(calories), Integer.parseInt(stressLevel));
     
-    for ( String[] item : pushExercises){
-        System.out.println(java.util.Arrays.toString(item));
-    }
-}
 
 
 
@@ -97,4 +107,4 @@ public static void main(String[] args){
 
 
 
-}
+}}
