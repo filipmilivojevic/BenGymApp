@@ -95,10 +95,13 @@ public static void main(String[] args){
     ArrayList<String[]> otherExercises = new ArrayList<>();
     addCategories(exerciseData, pushExercises, pullExercises, legsExercises, otherExercises);
     String userCategory = keyboard.nextLine();
-
+    System.out.println("Calories: ");
+    
     String calories = keyboard.nextLine();
+    System.out.println("StressLVL");
     String stressLevel = keyboard.nextLine();
     searchInputs(pullExercises, userCategory, Integer.parseInt(calories), Integer.parseInt(stressLevel));
+    
     
 
 
