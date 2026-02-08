@@ -54,16 +54,28 @@ public static void addCategories(ArrayList<String[]> exerciseData, ArrayList<Str
 
     }}
 
-    public static ArrayList<String[]> searchInputs(ArrayList<String[]> pull, String userCat, int userCal, int userStress){
+    public static ArrayList<String[]> searchInputs(
+        ArrayList<String[]> pull,
+        String userCat,
+        int userCal,
+        int userStress) {
         ArrayList<String[]> pulls = new ArrayList<>();
-        for (String[] row : pull){
-            if (Integer.parseInt(row[0]) <= userStress && Integer.parseInt(row[1]) >= userStress){
-                if (Integer.parseInt(row[3]) <= userCal && Integer.parseInt(row[4]) >= userCal){
+
+        for (String[] row : pull) {
+            if (Integer.parseInt(row[0]) <= userStress &&
+                Integer.parseInt(row[1]) >= userStress) {
+
+            if (Integer.parseInt(row[3]) <= userCal &&
+                    Integer.parseInt(row[4]) >= userCal) {
+
                     pulls.add(row);
-                }}
+                }
+            }
         }
+
         return pulls;
-    }
+}
+
     
 
 
@@ -85,7 +97,7 @@ public static void addCategories(ArrayList<String[]> exerciseData, ArrayList<Str
 
 // Main Method
 
-public static void main(String[] args){
+/* public static void main(String[] args){
     Scanner keyboard = new Scanner(System.in);
     String inputfile = keyboard.nextLine();
     ArrayList<String[]> exerciseData  = readDataFromFile(inputfile);
@@ -100,9 +112,84 @@ public static void main(String[] args){
     String calories = keyboard.nextLine();
     System.out.println("StressLVL");
     String stressLevel = keyboard.nextLine();
-    searchInputs(pullExercises, userCategory, Integer.parseInt(calories), Integer.parseInt(stressLevel));
+    ArrayList<String[]> results =
+    searchInputs(pullExercises, userCategory,
+                 Integer.parseInt(calories),
+                 Integer.parseInt(stressLevel));
+
+if (results.size() == 0) {
+    System.out.println("No exercises matched your criteria.");
+} else {
+    for (String[] row : results) {
+        for (String item : row) {
+            System.out.print(item + " ");
+        }
+        System.out.println();
+    }
+} */
+
+
+ public static void main(String[] args) {
+
+    Scanner keyboard = new Scanner(System.in);
+
+    // Read file
+    System.out.print("Enter filename: ");
+    String inputfile = keyboard.nextLine();
+
+    ArrayList<String[]> exerciseData = readDataFromFile(inputfile);
+
+    // Create category lists
+    ArrayList<String[]> pushExercises = new ArrayList<>();
+    ArrayList<String[]> pullExercises = new ArrayList<>();
+    ArrayList<String[]> legsExercises = new ArrayList<>();
+    ArrayList<String[]> otherExercises = new ArrayList<>();
+
+    // Categorize exercises
+    addCategories(exerciseData, pushExercises, pullExercises, legsExercises, otherExercises);
+
+    // User inputs
+    System.out.print("Category (push / pull / legs / other): ");
+    String userCategory = keyboard.nextLine().toLowerCase();
+
+    System.out.print("Calories: ");
+    int calories = Integer.parseInt(keyboard.nextLine());
+
+    System.out.print("Stress level: ");
+    int stressLevel = Integer.parseInt(keyboard.nextLine());
+
+    // Choose correct category list
+    ArrayList<String[]> selectedList = new ArrayList<>();
+
+    if (userCategory.equals("push")) {
+        selectedList = pushExercises;
+    } else if (userCategory.equals("pull")) {
+        selectedList = pullExercises;
+    } else if (userCategory.equals("legs")) {
+        selectedList = legsExercises;
+    } else {
+        selectedList = otherExercises;
+    }
+
+    // Search
+    ArrayList<String[]> results =
+            searchInputs(selectedList, userCategory, calories, stressLevel);
+
+    // Output
+    if (results.size() == 0) {
+        System.out.println("No exercises matched your criteria.");
+    } else {
+        System.out.println("\nMatching Exercises:");
+        for (String[] row : results) {
+            for (String item : row) {
+                System.out.print(item + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+   
     
-    
 
 
 
@@ -110,4 +197,4 @@ public static void main(String[] args){
 
 
 
-}}
+}
