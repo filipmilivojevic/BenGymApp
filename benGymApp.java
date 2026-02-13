@@ -2,7 +2,7 @@ import java.util.Scanner; //for reading keyboard input and Files
 import java.io.File;
 import java.io.PrintWriter; //for printing to a file
 import java.io.IOException; //Exception that can be thrown by File and Scanner
-import java.util.ArrayList;
+import java.util.*;
 
 public class benGymApp{
 
@@ -55,25 +55,23 @@ public static void addCategories(ArrayList<String[]> exerciseData, ArrayList<Str
     }}
 
     public static ArrayList<String[]> searchInputs(
-        ArrayList<String[]> pull,
+        ArrayList<String[]> gen,
         String userCat,
         int userCal,
         int userStress) {
-        ArrayList<String[]> pulls = new ArrayList<>();
+        ArrayList<String[]> generals = new ArrayList<>();
 
-        for (String[] row : pull) {
-            if (Integer.parseInt(row[0]) <= userStress &&
-                Integer.parseInt(row[1]) >= userStress) {
+        for (String[] row : gen) {
+            if (Integer.parseInt(row[0]) <= userStress) {
 
-            if (Integer.parseInt(row[3]) <= userCal &&
-                    Integer.parseInt(row[4]) >= userCal) {
+            if (Integer.parseInt(row[3]) <= userCal) {
 
-                    pulls.add(row);
+                    generals.add(row);
                 }
             }
         }
 
-        return pulls;
+        return generals;
 }
 
     
@@ -180,11 +178,10 @@ if (results.size() == 0) {
         System.out.println("No exercises matched your criteria.");
     } else {
         System.out.println("\nMatching Exercises:");
-        for (String[] row : results) {
-            for (String item : row) {
-                System.out.print(item + " ");
+        for (String[] row : results){
+            for (itm : row){
+
             }
-            System.out.println();
         }
     }
 }
@@ -197,4 +194,3 @@ if (results.size() == 0) {
 
 
 
-}
