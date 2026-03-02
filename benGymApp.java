@@ -6,8 +6,17 @@ import java.util.*;
 
 public class benGymApp{
 
+    public int category;
+    public int calorie;
+    public int stressLevel;
+    public String inputfile;
 
+public benGymApp(int category, int calorie, int stressLevel){
+    this.category = category;
+    this.calorie = calorie;
+    this.stressLevel = stressLevel;
 
+}
 
 
 
@@ -128,63 +137,11 @@ if (results.size() == 0) {
 
 
  public static void main(String[] args) {
+    System.out.println("gui Run");
 
-    Scanner keyboard = new Scanner(System.in);
+ }}
 
-    // Read file
-    System.out.print("Enter filename: ");
-    String inputfile = keyboard.nextLine();
 
-    ArrayList<String[]> exerciseData = readDataFromFile(inputfile);
-
-    // Create category lists
-    ArrayList<String[]> pushExercises = new ArrayList<>();
-    ArrayList<String[]> pullExercises = new ArrayList<>();
-    ArrayList<String[]> legsExercises = new ArrayList<>();
-    ArrayList<String[]> otherExercises = new ArrayList<>();
-
-    // Categorize exercises
-    addCategories(exerciseData, pushExercises, pullExercises, legsExercises, otherExercises);
-
-    // User inputs
-    System.out.print("Category (push / pull / legs / other): ");
-    String userCategory = keyboard.nextLine().toLowerCase();
-
-    System.out.print("Calories: ");
-    int calories = Integer.parseInt(keyboard.nextLine());
-
-    System.out.print("Stress level: ");
-    int stressLevel = Integer.parseInt(keyboard.nextLine());
-
-    // Choose correct category list
-    ArrayList<String[]> selectedList = new ArrayList<>();
-
-    if (userCategory.equals("push")) {
-        selectedList = pushExercises;
-    } else if (userCategory.equals("pull")) {
-        selectedList = pullExercises;
-    } else if (userCategory.equals("legs")) {
-        selectedList = legsExercises;
-    } else {
-        selectedList = otherExercises;
-    }
-
-    // Search
-    ArrayList<String[]> results =
-            searchInputs(selectedList, userCategory, calories, stressLevel);
-
-    // Output
-    if (results.size() == 0) {
-        System.out.println("No exercises matched your criteria.");
-    } else {
-        System.out.println("\nMatching Exercises:");
-        for (String[] row : results){
-            for (itm : row){
-
-            }
-        }
-    }
-}
    
     
 
