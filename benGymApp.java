@@ -63,18 +63,12 @@ public static void addCategories(ArrayList<String[]> exerciseData, ArrayList<Str
 
     }}
 
-    public static ArrayList<String[]> searchInputs(
-        ArrayList<String[]> gen,
-        String userCat,
-        int userCal,
-        int userStress) {
+    public static ArrayList<String[]> searchInputs(ArrayList<String[]> gen, String userCat, int userCal, int userStress) {
         ArrayList<String[]> generals = new ArrayList<>();
 
         for (String[] row : gen) {
-            if (Integer.parseInt(row[0]) <= userStress) {
-
-            if (Integer.parseInt(row[3]) <= userCal) {
-
+            if (userStress >= Integer.parseInt(row[0]) && userStress <= Integer.parseInt(row[1])) {
+                if (userCal >= Integer.parseInt(row[3]) && userCal <= Integer.parseInt(row[4])) {
                     generals.add(row);
                 }
             }
@@ -104,36 +98,6 @@ public static void addCategories(ArrayList<String[]> exerciseData, ArrayList<Str
 
 // Main Method
 
-/* public static void main(String[] args){
-    Scanner keyboard = new Scanner(System.in);
-    String inputfile = keyboard.nextLine();
-    ArrayList<String[]> exerciseData  = readDataFromFile(inputfile);
-    ArrayList<String[]> pushExercises = new ArrayList<>();
-    ArrayList<String[]> pullExercises = new ArrayList<>();
-    ArrayList<String[]> legsExercises = new ArrayList<>();
-    ArrayList<String[]> otherExercises = new ArrayList<>();
-    addCategories(exerciseData, pushExercises, pullExercises, legsExercises, otherExercises);
-    String userCategory = keyboard.nextLine();
-    System.out.println("Calories: ");
-    
-    String calories = keyboard.nextLine();
-    System.out.println("StressLVL");
-    String stressLevel = keyboard.nextLine();
-    ArrayList<String[]> results =
-    searchInputs(pullExercises, userCategory,
-                 Integer.parseInt(calories),
-                 Integer.parseInt(stressLevel));
-
-if (results.size() == 0) {
-    System.out.println("No exercises matched your criteria.");
-} else {
-    for (String[] row : results) {
-        for (String item : row) {
-            System.out.print(item + " ");
-        }
-        System.out.println();
-    }
-} */
 
 
  public static void main(String[] args) {

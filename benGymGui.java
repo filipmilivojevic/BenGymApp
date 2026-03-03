@@ -22,23 +22,35 @@ public class benGymGui implements ActionListener {
 
         displayResultsButton = new JButton("Find Exercises");
         displayResultsButton.addActionListener(this);
+        displayResultsButton.setBackground(new Color(220,224,217));
+
+        displayResultsButton.setOpaque(true);
+        displayResultsButton.setBorderPainted(false);
 
         filePathEntry = new JTextField();
         calorieEntry = new JTextField();
+        calorieEntry.setBackground(new Color(251,246,239));
+
         stressEntry = new JTextField();
+        stressEntry.setBackground(new Color(251,246,239));
+
 
         resultText = new JTextPane();
         resultText.setContentType("text/html");
         resultText.setEditable(false);
+        resultText.setBackground(new Color(251,246,239));
 
         // Layout
         mainPanel.setLayout(null);
+        mainPanel.setBackground(new Color(234,215,195)); // dark gray, change numbers for different color
         int x = 10;
         int y = 10;
 
         // Checkboxes
         for (JCheckBox checkBox : selections) {
             checkBox.setBounds(x, y, 400, 20);
+            checkBox.setBackground(new Color(234,215,195));
+
             y += 25;
         }
 
@@ -64,8 +76,9 @@ public class benGymGui implements ActionListener {
         y += 35;
 
         // Result Text ARea
-        resultText.setBounds(x, y, 390, 250);
-        mainPanel.add(resultText);
+        JScrollPane scrollPane = new JScrollPane(resultText);
+        scrollPane.setBounds(x, y, 390, 250);
+        mainPanel.add(scrollPane);
         y += 255;
 
         // Button
@@ -138,7 +151,7 @@ public class benGymGui implements ActionListener {
             if (results.isEmpty()) {
                 resultText.setText("<b style='color:red; font-family: Arial, sans-serif;'>No exercises matched your criteria.</b>");
             } else {
-                String html = "<b>Matching Exercises:</b><br><br>";
+                String html = "<b style='font-family: Arial;'>Matching Exercises:</b><br><br>";
                 for (String[] row : results) {
                     html += colorText(" " + row[1], "navy") +
                             " | Category: " + colorText(row[2], "green") +
