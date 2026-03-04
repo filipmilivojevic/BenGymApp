@@ -9,11 +9,13 @@ public class benGymApp{
     public int category;
     public int calorie;
     public int stressLevel;
+    public int exerciseName;
     public String inputfile;
 
-public benGymApp(int category, int calorie, int stressLevel){
+public benGymApp(int category, int calorie, int stressLevel, int exerciseName){
     this.category = category;
     this.calorie = calorie;
+    this.exerciseName = exerciseName;
     this.stressLevel = stressLevel;
 
 }

@@ -48,7 +48,7 @@ public class benGymGui implements ActionListener {
 
         // Checkboxes
         for (JCheckBox checkBox : selections) {
-            checkBox.setBounds(x, y, 400, 20);
+            checkBox.setBounds(x, y, 300, 30);
             checkBox.setBackground(new Color(234,215,195));
 
             y += 25;
@@ -59,30 +59,30 @@ public class benGymGui implements ActionListener {
 
         // Calorie label + field
         JLabel calLabel = new JLabel("Max Calories:");
-        calLabel.setBounds(x, y, 120, 25);
+        calLabel.setBounds(x, y, 420, 35);
         mainPanel.add(calLabel);
         y += 25;
-        calorieEntry.setBounds(x, y, 390, 30);
+        calorieEntry.setBounds(x, y, 590, 40);
         mainPanel.add(calorieEntry);
         y += 35;
 
         // Stress label
         JLabel stressLabel = new JLabel("Max Stress Level:");
-        stressLabel.setBounds(x, y, 150, 25);
+        stressLabel.setBounds(x, y, 350, 25);
         mainPanel.add(stressLabel);
         y += 25;
-        stressEntry.setBounds(x, y, 390, 30);
+        stressEntry.setBounds(x, y, 590, 40);
         mainPanel.add(stressEntry);
-        y += 35;
+        y += 50;
 
         // Result Text ARea
         JScrollPane scrollPane = new JScrollPane(resultText);
-        scrollPane.setBounds(x, y, 390, 250);
+        scrollPane.setBounds(x, y, 590, 450);
         mainPanel.add(scrollPane);
-        y += 255;
+        y += 460;
 
         // Button
-        displayResultsButton.setBounds(x, y, 390, 30);
+        displayResultsButton.setBounds(x, y, 590, 50);
         displayResultsButton.setMargin(new Insets(1, 1, 1, 1));
         mainPanel.add(displayResultsButton);
 
@@ -96,7 +96,7 @@ public class benGymGui implements ActionListener {
 
     private void createAndShowGUI() {
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.setSize(430, 700);
+        mainFrame.setSize(630, 900);
         mainFrame.setVisible(true);
     }
 
@@ -153,8 +153,9 @@ public class benGymGui implements ActionListener {
             } else {
                 String html = "<b style='font-family: Arial;'>Matching Exercises:</b><br><br>";
                 for (String[] row : results) {
-                    html += colorText(" " + row[1], "navy") +
-                            " | Category: " + colorText(row[2], "green") +
+                    html +=
+                            " | Category: " + colorText(row[2], "navy") +
+                            " | Exercise: " + colorText(row[5], "green") +
                             " | Calories: " + colorText(row[3], "red") +
                             " | Stress: " + colorText(row[0], "purple") +
                             "<br>";
