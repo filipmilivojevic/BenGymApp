@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class benGymGui implements ActionListener {
-
+    ArrayList<String[]> lastResults = new ArrayList<>();
     JFrame mainFrame;
     JPanel mainPanel;
     JCheckBox[] selections;
@@ -134,10 +134,10 @@ public class benGymGui implements ActionListener {
     }
 
 
-    public static void saveFileMethod(ArrayList<String> finalExercises){
+    public void saveFileMethod(){
         String content = "";
-        for (String exercise : finalExercises) {
-            content += exercise + "\n";
+        for (String[] row : lastResults) {
+            content += "Category: " + row[2] + " | Exercise: " + row[5] + " | Calories: " + row[3] + " | Stress: " + row[0] + "\n";
         }
         benGymApp.writeToFile(content);
     }
@@ -160,6 +160,7 @@ public class benGymGui implements ActionListener {
             benGymApp.addCategories(exerciseData, pushExercises, pullExercises, legsExercises, otherExercises);
 
 
+
             ArrayList<String[]> selectedList = new ArrayList<>();
             if (selections[0].isSelected()) selectedList.addAll(pushExercises);
             if (selections[1].isSelected()) selectedList.addAll(pullExercises);
@@ -173,6 +174,7 @@ public class benGymGui implements ActionListener {
 
 
             ArrayList<String[]> results = benGymApp.searchInputs(selectedList, "", calories, stress);
+            lastResults = benGymApp.searchInputs(selectedList, "", calories, stress);
 
             // Display results
             if (results.isEmpty()) {
