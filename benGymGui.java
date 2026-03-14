@@ -81,6 +81,7 @@ public class benGymGui implements ActionListener {
         mainPanel.add(scrollPane);
         y += 460;
 
+
         // Button
         displayResultsButton.setBounds(x, y, 590, 50);
         displayResultsButton.setMargin(new Insets(1, 1, 1, 1));
