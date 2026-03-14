@@ -1,3 +1,4 @@
+import java.io.FileWriter;
 import java.util.Scanner; //for reading keyboard input and Files
 import java.io.File;
 import java.io.PrintWriter; //for printing to a file
@@ -18,6 +19,16 @@ public benGymApp(int category, int calorie, int stressLevel, int exerciseName){
     this.exerciseName = exerciseName;
     this.stressLevel = stressLevel;
 
+}
+// Used this to help me with file because i didnt find it in any of our projects https://www.w3schools.com/java/java_files_write.asp
+public static void writeToFile(String filename, String content){
+    try{
+        FileWriter writer = new FileWriter(filename);
+        writer.write(content);
+        writer.close();
+    } catch(IOException e){
+        System.out.println("Ben looks like theres an error saving to a file");
+    }
 }
 
 
