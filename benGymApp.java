@@ -21,9 +21,9 @@ public benGymApp(int category, int calorie, int stressLevel, int exerciseName){
 
 }
 // Used this to help me with file because i didnt find it in any of our projects https://www.w3schools.com/java/java_files_write.asp
-public static void writeToFile(String filename, String content){
+public static void writeToFile(String content){
     try{
-        FileWriter writer = new FileWriter(filename);
+        FileWriter writer = new FileWriter("dailyExercises.txt");
         writer.write(content);
         writer.close();
     } catch(IOException e){

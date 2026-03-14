@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.Insets;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class benGymGui implements ActionListener {
@@ -14,6 +15,7 @@ public class benGymGui implements ActionListener {
     JTextField calorieEntry;
     JTextField stressEntry;
     JTextPane resultText;
+    JButton saveFileButton;
 
     public benGymGui () {
         mainFrame = new JFrame("Ben's Gym App");
@@ -26,6 +28,14 @@ public class benGymGui implements ActionListener {
 
         displayResultsButton.setOpaque(true);
         displayResultsButton.setBorderPainted(false);
+
+
+        saveFileButton = new JButton("Save File");
+        saveFileButton.addActionListener(this);
+        saveFileButton.setBackground(new Color(220,224,217));
+        saveFileButton.setOpaque(true);
+        saveFileButton.setBorderPainted(false);
+
 
         filePathEntry = new JTextField();
         calorieEntry = new JTextField();
@@ -82,10 +92,15 @@ public class benGymGui implements ActionListener {
         y += 460;
 
 
-        // Button
+        // Buttons
         displayResultsButton.setBounds(x, y, 590, 50);
         displayResultsButton.setMargin(new Insets(1, 1, 1, 1));
         mainPanel.add(displayResultsButton);
+
+
+        saveFileButton.setBounds(x, y+75, 590,50);
+        saveFileButton.setMargin(new Insets(1, 1, 1, 1));
+        mainPanel.add(saveFileButton);
 
         // Add checkboxes
         for (JCheckBox checkBox : selections) {
@@ -118,12 +133,23 @@ public class benGymGui implements ActionListener {
         return "<span style=\"color:" + color + ";\">" + text + "</span>";
     }
 
+
+    public static void saveFileMethod(ArrayList<String> finalExercises){
+        String content = "";
+        for (String exercise : finalExercises) {
+            content += exercise + "\n";
+        }
+        benGymApp.writeToFile(content);
+    }
+
+
+
     public void displayGymResults() {
         try {
             String filePath = "bensExercises.csv";
 
-            int calories = Integer.parseInt(calorieEntry.getText().trim());
-            int stress = Integer.parseInt(stressEntry.getText().trim());
+            int calories = Integer.parseInt(calorieEntry.getText());
+            int stress = Integer.parseInt(stressEntry.getText());
 
             // Code Implemented from my first class
             ArrayList<String[]> exerciseData = benGymApp.readDataFromFile(filePath);
@@ -173,6 +199,8 @@ public class benGymGui implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == displayResultsButton)
             displayGymResults();
+        if (e.getSource() == saveFileButton)
+            saveFileMethod();
     }
 
     public static void main(String[] args) {
