@@ -20,8 +20,7 @@ public class benGymApp{
     private ArrayList<String[]> legsExercises   = new ArrayList<>();
     private ArrayList<String[]> otherExercises  = new ArrayList<>();
 // my basic constructor.
-public benGymApp(String inputfile, int category, int calorie, int stressLevel){
-    this.category = category;
+public benGymApp(String inputfile, int calorie, int stressLevel){
     this.calorie = calorie;
     this.inputfile = inputfile;
     this.stressLevel = stressLevel;
@@ -41,16 +40,15 @@ public void writeToFile(String content){
 
 
 
-
+// GPA Statistics asignment helped me on this method
 public void readDataFromFile(){
-    ArrayList<String[]> benExercises = new ArrayList<>();
    try{
      File file = new File(this.inputfile);
-    Scanner scan = new Scanner(this.inputfile);
+    Scanner scan = new Scanner(file);
     while (scan.hasNextLine()){
         String line = scan.nextLine();
         String[] row = line.split(",");
-        benExercises.add(row);
+        this.exerciseData.add(row);
     }
     scan.close();
     }
@@ -60,7 +58,7 @@ public void readDataFromFile(){
     
     addCategories();
 }
-
+// very straighforward method
 public void addCategories(){
     for (String[] row : exerciseData){
         String cat = row[2];
@@ -76,12 +74,12 @@ public void addCategories(){
 
     }}
 
-    public static ArrayList<String[]> searchInputs(ArrayList<String[]> gen, String userCat, int userCal, int userStress) {
+    public ArrayList<String[]> searchInputs(ArrayList<String[]> gen) {
         ArrayList<String[]> generals = new ArrayList<>();
 
         for (String[] row : gen) {
-            if (userStress >= Integer.parseInt(row[0]) && userStress <= Integer.parseInt(row[1])) {
-                if (userCal >= Integer.parseInt(row[3]) && userCal <= Integer.parseInt(row[4])) {
+            if (this.stressLevel >= Integer.parseInt(row[0]) && this.stressLevel <= Integer.parseInt(row[1])) {
+                if (this.calorie >= Integer.parseInt(row[3]) && this.calorie <= Integer.parseInt(row[4])) {
                     generals.add(row);
                 }
             }
@@ -91,7 +89,25 @@ public void addCategories(){
 }
 
     
+// Now it is time for my getter metods so i can use these later in my GUI code to make it much easier.
+    public ArrayList<String[]> getPushExercises(){
+    return pushExercises;
+    }
 
+    //get Pulls
+    public ArrayList<String[]> getPullExercises(){
+        return pullExercises;
+    }
+
+    //get Legs
+    public ArrayList<String[]> getLegsExercises(){
+    return legsExercises;
+    }
+
+    //get Other
+    public ArrayList<String[]> getOtherExercises(){
+    return otherExercises;
+    }
 
 
 
@@ -115,6 +131,8 @@ public void addCategories(){
 
  public static void main(String[] args) {
     System.out.println("gui Run");
+    // read a article for this code
+    benGymGui gui = new benGymGui();
 
  }}
 

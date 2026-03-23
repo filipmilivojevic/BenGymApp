@@ -2,11 +2,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.Insets;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class benGymGui implements ActionListener {
     ArrayList<String[]> lastResults = new ArrayList<>();
+    benGymApp currentModel = null;
     JFrame mainFrame;
     JPanel mainPanel;
     JCheckBox[] selections;
@@ -135,11 +135,17 @@ public class benGymGui implements ActionListener {
 
 
     public void saveFileMethod(){
-        String content = "";
-        for (String[] row : lastResults) {
-            content += "Category: " + row[2] + " | Exercise: " + row[5] + " | Calories: " + row[3] + " | Stress: " + row[0] + "\n";
+        if (currentModel == null){
+            resultText.setText("<b style='color:red;'> Run Something Before Saving.</b>");
+
         }
-        benGymApp.writeToFile(content);
+        StringBuilder content = new StringBuilder();
+        for (String[] row : lastResults) {
+            content.append("Category: ").append(row[2]).append(" | Exercise: ").append(row[5]).append(" | Calories: ").append(row[3]).append(" | Stress: ").append(row[0]).append("\n");
+        }
+
+        // The line below I didnt make a tostring method instead I used one from the arraylists
+        currentModel.writeToFile(content.toString());
     }
 
 
@@ -150,38 +156,33 @@ public class benGymGui implements ActionListener {
 
             int calories = Integer.parseInt(calorieEntry.getText());
             int stress = Integer.parseInt(stressEntry.getText());
-
-            // Code Implemented from my first class
-            ArrayList<String[]> exerciseData = benGymApp.readDataFromFile(filePath);
-            ArrayList<String[]> pushExercises = new ArrayList<>();
-            ArrayList<String[]> pullExercises = new ArrayList<>();
-            ArrayList<String[]> legsExercises = new ArrayList<>();
-            ArrayList<String[]> otherExercises = new ArrayList<>();
-            benGymApp.addCategories(exerciseData, pushExercises, pullExercises, legsExercises, otherExercises);
+            // My model is from the constructor so It connects the two codes / files together I loved this idea
+            currentModel = new benGymApp(filePath, calories, stress);
+            currentModel.readDataFromFile();
 
 
 
             ArrayList<String[]> selectedList = new ArrayList<>();
-            if (selections[0].isSelected()) selectedList.addAll(pushExercises);
-            if (selections[1].isSelected()) selectedList.addAll(pullExercises);
-            if (selections[2].isSelected()) selectedList.addAll(legsExercises);
-            if (selections[3].isSelected()) selectedList.addAll(otherExercises);
+            if (selections[0].isSelected()) selectedList.addAll(currentModel.getPushExercises());
+            if (selections[1].isSelected()) selectedList.addAll(currentModel.getPullExercises());
+            if (selections[2].isSelected()) selectedList.addAll(currentModel.getLegsExercises());
+            if (selections[3].isSelected()) selectedList.addAll(currentModel.getOtherExercises());
 
             if (selectedList.isEmpty()) {
                 resultText.setText("<b style='color:red; font-family: Arial, sans-serif;'>Please select at least one category.</b>");
-                return;
+
             }
 
 
-            ArrayList<String[]> results = benGymApp.searchInputs(selectedList, "", calories, stress);
-            lastResults = benGymApp.searchInputs(selectedList, "", calories, stress);
+
+            lastResults = currentModel.searchInputs(selectedList);
 
             // Display results
-            if (results.isEmpty()) {
+            if (lastResults.isEmpty()) {
                 resultText.setText("<b style='color:red; font-family: Arial, sans-serif;'>No exercises matched your criteria.</b>");
             } else {
                 String html = "<b style='font-family: Arial;'>Matching Exercises:</b><br><br>";
-                for (String[] row : results) {
+                for (String[] row : lastResults) {
                     html +=
                             " | Category: " + colorText(row[2], "navy") +
                             " | Exercise: " + colorText(row[5], "green") +
@@ -201,7 +202,7 @@ public class benGymGui implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == displayResultsButton)
             displayGymResults();
-        if (e.getSource() == saveFileButton)
+        else if (e.getSource() == saveFileButton)
             saveFileMethod();
     }
 
