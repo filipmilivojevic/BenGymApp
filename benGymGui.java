@@ -1,3 +1,5 @@
+import sun.security.util.ArrayUtil;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -174,8 +176,8 @@ public class benGymGui implements ActionListener {
             }
 
 
-
-            lastResults = currentModel.searchInputs(selectedList);
+            ArrayList<String[]> filteredList = currentModel.searchInputs(selectedList);
+            lastResults = currentModel.pickRandom(filteredList,6);
 
             // Display results
             if (lastResults.isEmpty()) {

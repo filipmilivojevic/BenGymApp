@@ -1,4 +1,5 @@
 import java.io.FileWriter;
+import java.lang.reflect.Array;
 import java.util.Scanner; //for reading keyboard input and Files
 import java.io.File;
 import java.io.PrintWriter; //for printing to a file
@@ -87,6 +88,18 @@ public void addCategories(){
 
         return generals;
 }
+
+
+// Now after a few meetings with my client he requested 5 random exercises every time so i decided to make it 6 im using math.random for the algorithm
+    public ArrayList<String[]> pickRandom (ArrayList<String[]> list, int count) {
+        ArrayList<String[]> picked = new ArrayList<>();
+        for (int i = 0; i < count && i < list.size(); i++) {
+            int index = (int) (Math.random() * list.size());
+            picked.add(list.get(index));
+        }
+        return picked;
+    }
+
 
     
 // Now it is time for my getter metods so i can use these later in my GUI code to make it much easier.
