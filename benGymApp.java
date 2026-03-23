@@ -14,8 +14,12 @@ public class benGymApp{
     public String inputfile;
 
 
-    private ArrayList<String[]> exerciseData = new ArrayList<>()
-
+    private ArrayList<String[]> exerciseData = new ArrayList<>();
+    private ArrayList<String[]> pushExercises   = new ArrayList<>();
+    private ArrayList<String[]> pullExercises   = new ArrayList<>();
+    private ArrayList<String[]> legsExercises   = new ArrayList<>();
+    private ArrayList<String[]> otherExercises  = new ArrayList<>();
+// my basic constructor.
 public benGymApp(String inputfile, int category, int calorie, int stressLevel){
     this.category = category;
     this.calorie = calorie;
@@ -25,7 +29,7 @@ public benGymApp(String inputfile, int category, int calorie, int stressLevel){
 
 }
 // Used this to help me with file because i didnt find it in any of our projects https://www.w3schools.com/java/java_files_write.asp
-public static void writeToFile(String content){
+public void writeToFile(String content){
     try{
         FileWriter writer = new FileWriter("dailyExercises.txt");
         writer.write(content);
@@ -38,12 +42,11 @@ public static void writeToFile(String content){
 
 
 
-public static ArrayList<String[]> readDataFromFile(String filename){
+public void readDataFromFile(){
     ArrayList<String[]> benExercises = new ArrayList<>();
    try{
-     File file = new File(filename);
-    Scanner scan = new Scanner(file);
-
+     File file = new File(this.inputfile);
+    Scanner scan = new Scanner(this.inputfile);
     while (scan.hasNextLine()){
         String line = scan.nextLine();
         String[] row = line.split(",");
@@ -55,27 +58,20 @@ public static ArrayList<String[]> readDataFromFile(String filename){
         System.out.println("Cannot Read file");
     }
     
-    return benExercises;
+    addCategories();
 }
 
-public static void addCategories(ArrayList<String[]> exerciseData, ArrayList<String[]> pushExercises, ArrayList<String[]> pullExercises, ArrayList<String[]> legsExercises, ArrayList<String[]> otherExercises){
+public void addCategories(){
     for (String[] row : exerciseData){
-        String exerciseNum = row[2];
-        if (exerciseNum.equals("chest"))
+        String cat = row[2];
+        if (cat.equals("chest") || cat.equals("triceps") || cat.equals("shoulders")){
             pushExercises.add(row);
-        if (exerciseNum.equals("triceps"))
-            pushExercises.add(row);
-        if (exerciseNum.equals("shoulders"))
-            pushExercises.add(row);
-        if (exerciseNum.equals("back"))
+        }
+        else if (cat.equals("back") || cat.equals("biceps") || cat.equals("arms"))
             pullExercises.add(row);
-        if (exerciseNum.equals("biceps"))
-            pullExercises.add(row);
-        if (exerciseNum.equals("arms"))
-            pullExercises.add(row);
-        if (exerciseNum.equals("legs"))
+        else if (cat.equals("legs"))
             legsExercises.add(row);
-        if (exerciseNum.equals("abs"))
+        else if (cat.equals("abs"))
             otherExercises.add(row);
 
     }}
