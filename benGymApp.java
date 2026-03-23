@@ -10,14 +10,18 @@ public class benGymApp{
     public int category;
     public int calorie;
     public int stressLevel;
-    public int exerciseName;
+    public String exerciseName;
     public String inputfile;
 
-public benGymApp(int category, int calorie, int stressLevel, int exerciseName){
+
+    private ArrayList<String[]> exerciseData = new ArrayList<>()
+
+public benGymApp(String inputfile, int category, int calorie, int stressLevel){
     this.category = category;
     this.calorie = calorie;
-    this.exerciseName = exerciseName;
+    this.inputfile = inputfile;
     this.stressLevel = stressLevel;
+
 
 }
 // Used this to help me with file because i didnt find it in any of our projects https://www.w3schools.com/java/java_files_write.asp
