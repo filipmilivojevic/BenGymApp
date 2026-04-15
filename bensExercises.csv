@@ -44,102 +44,102 @@ stress_level_min,stress_level_max,muscle_category,calories_min,calories_max,exer
 1,1,chest,2200,3000,Paused Bench Press,1,1,1
 2,2,chest,1800,2500,Paused Bench Press,1,1,1
 3,3,chest,1500,2200,Paused Bench Press,1,1,1
-1,1,legs,2200,3000,Back Squat,1,1,1
-2,2,legs,1800,2500,Back Squat,1,1,1
-3,3,legs,1500,2200,Back Squat,1,1,1
-1,1,legs,2200,3000,Front Squat,1,1,1
-2,2,legs,1800,2500,Front Squat,1,1,1
-3,3,legs,1500,2200,Front Squat,1,1,1
-1,1,legs,2200,3000,Leg Press,1,1,1
-2,2,legs,1800,2500,Leg Press,1,1,1
-3,3,legs,1500,2200,Leg Press,1,1,1
-1,1,legs,2200,3000,Walking Lunges,1,1,1
-2,2,legs,1800,2500,Walking Lunges,1,1,1
-3,3,legs,1500,2200,Walking Lunges,1,1,1
-1,1,legs,2200,3000,Romanian Deadlift,1,1,1
-2,2,legs,1800,2500,Romanian Deadlift,1,1,1
-3,3,legs,1500,2200,Romanian Deadlift,1,1,1
-1,1,legs,2200,3000,Seated Leg Curl,1,1,1
-2,2,legs,1800,2500,Seated Leg Curl,1,1,1
-3,3,legs,1500,2200,Seated Leg Curl,1,1,1
-1,1,legs,2200,3000,Goblet Squat,1,1,1
-2,2,legs,1800,2500,Goblet Squat,1,1,1
-3,3,legs,1500,2200,Goblet Squat,1,1,1
-1,1,back,2200,3000,Deadlift,1,1,1
-2,2,back,1800,2500,Deadlift,1,1,1
-3,3,back,1500,2200,Deadlift,1,1,1
-1,1,back,2200,3000,Pull-Ups,1,1,1
-2,2,back,1800,2500,Pull-Ups,1,1,1
-3,3,back,1500,2200,Pull-Ups,1,1,1
-1,1,back,2200,3000,Lat Pulldown,1,1,1
-2,2,back,1800,2500,Lat Pulldown,1,1,1
-3,3,back,1500,2200,Lat Pulldown,1,1,1
-1,1,back,2200,3000,Seated Cable Row,1,1,1
-2,2,back,1800,2500,Seated Cable Row,1,1,1
-3,3,back,1500,2200,Seated Cable Row,1,1,1
-1,1,back,2200,3000,Machine Row,1,1,1
-2,2,back,1800,2500,Machine Row,1,1,1
-3,3,back,1500,2200,Machine Row,1,1,1
-1,1,back,2200,3000,Barbell Row,1,1,1
-2,2,back,1800,2500,Barbell Row,1,1,1
-3,3,back,1500,2200,Barbell Row,1,1,1
-1,1,biceps,2200,3000,Barbell Curl,1,1,1
-2,2,biceps,1800,2500,Barbell Curl,1,1,1
-3,3,biceps,1500,2200,Barbell Curl,1,1,1
-1,1,biceps,2200,3000,Incline Dumbbell Curl,1,1,1
-2,2,biceps,1800,2500,Incline Dumbbell Curl,1,1,1
-3,3,biceps,1500,2200,Incline Dumbbell Curl,1,1,1
-1,1,biceps,2200,3000,Hammer Curl,1,1,1
-2,2,biceps,1800,2500,Hammer Curl,1,1,1
-3,3,biceps,1500,2200,Hammer Curl,1,1,1
-1,1,biceps,2200,3000,Cable Curl,1,1,1
-2,2,biceps,1800,2500,Cable Curl,1,1,1
-3,3,biceps,1500,2200,Cable Curl,1,1,1
-1,1,biceps,2200,3000,Chin-Ups,1,1,1
-2,2,biceps,1800,2500,Chin-Ups,1,1,1
-3,3,biceps,1500,2200,Chin-Ups,1,1,1
-1,1,triceps,2200,3000,Close-Grip Bench Press,1,1,1
-2,2,triceps,1800,2500,Close-Grip Bench Press,1,1,1
-3,3,triceps,1500,2200,Close-Grip Bench Press,1,1,1
-1,1,triceps,2200,3000,Cable Pushdowns,1,1,1
-2,2,triceps,1800,2500,Cable Pushdowns,1,1,1
-3,3,triceps,1500,2200,Cable Pushdowns,1,1,1
-1,1,triceps,2200,3000,Skull Crushers,1,1,1
-2,2,triceps,1800,2500,Skull Crushers,1,1,1
-3,3,triceps,1500,2200,Skull Crushers,1,1,1
-1,1,triceps,2200,3000,Weighted Dips,1,1,1
-2,2,triceps,1800,2500,Weighted Dips,1,1,1
-3,3,triceps,1500,2200,Weighted Dips,1,1,1
-1,1,triceps,2200,3000,Overhead Extensions,1,1,1
-2,2,triceps,1800,2500,Overhead Extensions,1,1,1
-3,3,triceps,1500,2200,Overhead Extensions,1,1,1
-1,1,arms,2200,3000,EZ-Bar Curl,1,1,1
-2,2,arms,1800,2500,EZ-Bar Curl,1,1,1
-3,3,arms,1500,2200,EZ-Bar Curl,1,1,1
-1,1,arms,2200,3000,Hammer Curl,1,1,1
-2,2,arms,1800,2500,Hammer Curl,1,1,1
-3,3,arms,1500,2200,Hammer Curl,1,1,1
-1,1,arms,2200,3000,Cable Curl,1,1,1
-2,2,arms,1800,2500,Cable Curl,1,1,1
-3,3,arms,1500,2200,Cable Curl,1,1,1
-1,1,arms,2200,3000,Band Curl,1,1,1
-2,2,arms,1800,2500,Band Curl,1,1,1
-3,3,arms,1500,2200,Band Curl,1,1,1
-1,1,arms,2200,3000,Preacher Curl,1,1,1
-2,2,arms,1800,2500,Preacher Curl,1,1,1
-3,3,arms,1500,2200,Preacher Curl,1,1,1
-1,1,abs,2200,3000,Hanging Leg Raises,1,1,1
-2,2,abs,1800,2500,Hanging Leg Raises,1,1,1
-3,3,abs,1500,2200,Hanging Leg Raises,1,1,1
-1,1,abs,2200,3000,Cable Crunches,1,1,1
-2,2,abs,1800,2500,Cable Crunches,1,1,1
-3,3,abs,1500,2200,Cable Crunches,1,1,1
-1,1,abs,2200,3000,Plank Hold,1,1,1
-2,2,abs,1800,2500,Plank Hold,1,1,1
-3,3,abs,1500,2200,Plank Hold,1,1,1
-1,1,abs,2200,3000,Ab Wheel Rollout,1,1,1
-2,2,abs,1800,2500,Ab Wheel Rollout,1,1,1
-3,3,abs,1500,2200,Ab Wheel Rollout,1,1,1
-1,1,abs,2200,3000,Dead Bug,1,1,1
-2,2,abs,1800,2500,Dead Bug,1,1,1
-3,3,abs,1500,2200,Dead Bug,1,1,1
+1,1,legs,2400,3200,Back Squat,1,1,1
+2,2,legs,2000,2700,Back Squat,1,1,1
+3,3,legs,1700,2400,Back Squat,1,1,1
+1,1,legs,2400,3200,Front Squat,1,1,1
+2,2,legs,2000,2700,Front Squat,1,1,1
+3,3,legs,1700,2400,Front Squat,1,1,1
+1,1,legs,2400,3200,Leg Press,1,1,1
+2,2,legs,2000,2700,Leg Press,1,1,1
+3,3,legs,1700,2400,Leg Press,1,1,1
+1,1,legs,2400,3200,Walking Lunges,1,1,1
+2,2,legs,2000,2700,Walking Lunges,1,1,1
+3,3,legs,1700,2400,Walking Lunges,1,1,1
+1,1,legs,2400,3200,Romanian Deadlift,1,1,1
+2,2,legs,2000,2700,Romanian Deadlift,1,1,1
+3,3,legs,1700,2400,Romanian Deadlift,1,1,1
+1,1,legs,2400,3200,Seated Leg Curl,1,1,1
+2,2,legs,2000,2700,Seated Leg Curl,1,1,1
+3,3,legs,1700,2400,Seated Leg Curl,1,1,1
+1,1,legs,2400,3200,Goblet Squat,1,1,1
+2,2,legs,2000,2700,Goblet Squat,1,1,1
+3,3,legs,1700,2400,Goblet Squat,1,1,1
+1,1,back,2400,3200,Deadlift,1,1,1
+2,2,back,2000,2700,Deadlift,1,1,1
+3,3,back,1700,2400,Deadlift,1,1,1
+1,1,back,2400,3200,Pull-Ups,1,1,1
+2,2,back,2000,2700,Pull-Ups,1,1,1
+3,3,back,1700,2400,Pull-Ups,1,1,1
+1,1,back,2400,3200,Lat Pulldown,1,1,1
+2,2,back,2000,2700,Lat Pulldown,1,1,1
+3,3,back,1700,2400,Lat Pulldown,1,1,1
+1,1,back,2400,3200,Seated Cable Row,1,1,1
+2,2,back,2000,2700,Seated Cable Row,1,1,1
+3,3,back,1700,2400,Seated Cable Row,1,1,1
+1,1,back,2400,3200,Machine Row,1,1,1
+2,2,back,2000,2700,Machine Row,1,1,1
+3,3,back,1700,2400,Machine Row,1,1,1
+1,1,back,2400,3200,Barbell Row,1,1,1
+2,2,back,2000,2700,Barbell Row,1,1,1
+3,3,back,1700,2400,Barbell Row,1,1,1
+1,1,biceps,2000,2800,Barbell Curl,1,1,1
+2,2,biceps,1600,2300,Barbell Curl,1,1,1
+3,3,biceps,1400,2000,Barbell Curl,1,1,1
+1,1,biceps,2000,2800,Incline Dumbbell Curl,1,1,1
+2,2,biceps,1600,2300,Incline Dumbbell Curl,1,1,1
+3,3,biceps,1400,2000,Incline Dumbbell Curl,1,1,1
+1,1,biceps,2000,2800,Hammer Curl,1,1,1
+2,2,biceps,1600,2300,Hammer Curl,1,1,1
+3,3,biceps,1400,2000,Hammer Curl,1,1,1
+1,1,biceps,2000,2800,Cable Curl,1,1,1
+2,2,biceps,1600,2300,Cable Curl,1,1,1
+3,3,biceps,1400,2000,Cable Curl,1,1,1
+1,1,biceps,2000,2800,Chin-Ups,1,1,1
+2,2,biceps,1600,2300,Chin-Ups,1,1,1
+3,3,biceps,1400,2000,Chin-Ups,1,1,1
+1,1,triceps,2000,2800,Close-Grip Bench Press,1,1,1
+2,2,triceps,1600,2300,Close-Grip Bench Press,1,1,1
+3,3,triceps,1400,2000,Close-Grip Bench Press,1,1,1
+1,1,triceps,2000,2800,Cable Pushdowns,1,1,1
+2,2,triceps,1600,2300,Cable Pushdowns,1,1,1
+3,3,triceps,1400,2000,Cable Pushdowns,1,1,1
+1,1,triceps,2000,2800,Skull Crushers,1,1,1
+2,2,triceps,1600,2300,Skull Crushers,1,1,1
+3,3,triceps,1400,2000,Skull Crushers,1,1,1
+1,1,triceps,2000,2800,Weighted Dips,1,1,1
+2,2,triceps,1600,2300,Weighted Dips,1,1,1
+3,3,triceps,1400,2000,Weighted Dips,1,1,1
+1,1,triceps,2000,2800,Overhead Extensions,1,1,1
+2,2,triceps,1600,2300,Overhead Extensions,1,1,1
+3,3,triceps,1400,2000,Overhead Extensions,1,1,1
+1,1,arms,2000,2800,EZ-Bar Curl,1,1,1
+2,2,arms,1600,2300,EZ-Bar Curl,1,1,1
+3,3,arms,1400,2000,EZ-Bar Curl,1,1,1
+1,1,arms,2000,2800,Hammer Curl,1,1,1
+2,2,arms,1600,2300,Hammer Curl,1,1,1
+3,3,arms,1400,2000,Hammer Curl,1,1,1
+1,1,arms,2000,2800,Cable Curl,1,1,1
+2,2,arms,1600,2300,Cable Curl,1,1,1
+3,3,arms,1400,2000,Cable Curl,1,1,1
+1,1,arms,2000,2800,Band Curl,1,1,1
+2,2,arms,1600,2300,Band Curl,1,1,1
+3,3,arms,1400,2000,Band Curl,1,1,1
+1,1,arms,2000,2800,Preacher Curl,1,1,1
+2,2,arms,1600,2300,Preacher Curl,1,1,1
+3,3,arms,1400,2000,Preacher Curl,1,1,1
+1,1,abs,1800,2600,Hanging Leg Raises,1,1,1
+2,2,abs,1500,2200,Hanging Leg Raises,1,1,1
+3,3,abs,1300,1900,Hanging Leg Raises,1,1,1
+1,1,abs,1800,2600,Cable Crunches,1,1,1
+2,2,abs,1500,2200,Cable Crunches,1,1,1
+3,3,abs,1300,1900,Cable Crunches,1,1,1
+1,1,abs,1800,2600,Plank Hold,1,1,1
+2,2,abs,1500,2200,Plank Hold,1,1,1
+3,3,abs,1300,1900,Plank Hold,1,1,1
+1,1,abs,1800,2600,Ab Wheel Rollout,1,1,1
+2,2,abs,1500,2200,Ab Wheel Rollout,1,1,1
+3,3,abs,1300,1900,Ab Wheel Rollout,1,1,1
+1,1,abs,1800,2600,Dead Bug,1,1,1
+2,2,abs,1500,2200,Dead Bug,1,1,1
+3,3,abs,1300,1900,Dead Bug,1,1,1
